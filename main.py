@@ -49,7 +49,7 @@ def gradient_text(text, colors):
 
 def banner(console):
     os.system("cls" if os.name == "nt" else "clear")
-    brand_name = "nuestro canal @MALVADOTOOL"
+    brand_name = "Únase a nuestro canal https://t.me/MALVADOTOOLCPM"
 
     text = Text(brand_name, style="bold black")
 
@@ -61,7 +61,6 @@ def banner(console):
         "[bold yellow]      𝗣𝗢𝗥 𝗙𝗔𝗩𝗢𝗥, 𝗖𝗜𝗘𝗥𝗥𝗘 𝗦𝗘𝗦𝗜𝗢𝗡 𝗘𝗡 𝗖𝗣𝗠 𝗔𝗡𝗧𝗘𝗦 𝗗𝗘 𝗨𝗦𝗔𝗥 𝗟𝗔 𝗛𝗘𝗥𝗥𝗔𝗠𝗜𝗘𝗡𝗧𝗔[/bold yellow]"
     )
     console.print("[bold yellow]      𝗡𝗢 𝗘𝗦𝗧𝗔 𝗣𝗘𝗥𝗠𝗜𝗧𝗜𝗗𝗢 𝗖𝗢𝗠𝗣𝗔𝗥𝗧𝗜𝗥 𝗟𝗔 𝗖𝗟𝗔𝗩𝗘 𝗗𝗘 𝗔𝗖𝗖𝗘𝗦𝗢[/bold yellow]")
-        "[bold yellow].                   TIKTOK: 𝙴𝙻 𝙼𝙰𝙻𝚅𝙰𝙳𝙾_𝙲𝙿𝙼  
     console.print(
         "[bold white] ============================================================[/bold white]"
     )
@@ -120,7 +119,7 @@ def load_key_data(cpm):
     )
 
     console.print(
-        f"[bold white]   >> SALDO     : {data.get('coins') if not data.get('is_unlimited') else 'unlimited'}[/bold white]"
+        f"[bold white]   >> SALDO     : {data.get('coins') if not data.get('is_unlimited') else 'Ilimitado'}[/bold white]"
     )
 
 
@@ -139,13 +138,13 @@ def load_client_details():
     response = requests.get("http://ip-api.com/json")
     data = response.json()
     console.print(
-        "[bold red] =============[bold white][ LOCALIZACIÓN ][/bold white]=============[/bold red]"
+        "[bold yellow] =============[bold white][ LOCALIZACIÓN ][/bold white]=============[/bold yellow]"
     )
     console.print(
         f"[bold white]    >> Country    : {data.get('country')} {data.get('zip')}[/bold white]"
     )
     console.print(
-        "[bold red] ===============[bold white][ ＭＥＮＵ ][/bold white]===========[/bold red]"
+        "[bold yellow] ===============[bold white][ ＭＥＮＵ ][/bold white]===========[/bold yellow]"
     )
 
 
@@ -176,7 +175,7 @@ if __name__ == "__main__":
     while True:
         banner(console)
         acc_email = prompt_valid_value(
-            "[bold][?] Correo electrónico de cpm[/bold]", "EMAIL", password=False
+            "[bold][?] Correo electrónico de la cuenta[/bold]", "EMAIL", password=False
         )
         acc_password = prompt_valid_value(
             "[bold][?] Contraseña de la cuenta[/bold]", "PASSWORD", password=False
@@ -413,14 +412,14 @@ if __name__ == "__main__":
                 "[bold yellow][bold white](48)[/bold white]: Desbloquear Mercedes Cls                        [bold yellow]4000K[/bold yellow][/bold yellow]"
             )
             console.print(
-                "[bold yellow][bold white](49)[/bold white]: Camber de postura                                [bold yellow]1000K[/bold yellow][/bold yellow]"
+                "[bold yellow][bold white](49)[/bold white]: Comba de postura                                [bold yellow]1000K[/bold yellow][/bold yellow]"
             )
             console.print(
-                "[bold yellow][bold white](0) [/bold white]: Salir [/bold yellow]"
+                "[bold yellow][bold white](0) [/bold white]: Salir de la herramienta [/bold yellow]"
             )
 
             console.print(
-                "[bold red]=============[bold white][ MALVADO TOOL VIP ][/bold white]============[/bold red]"
+                "[bold yellow]===============[bold white][ EL MALVADO ][/bold white]===============[/bold yellow]"
             )
 
             service = IntPrompt.ask(
@@ -430,7 +429,7 @@ if __name__ == "__main__":
             )
 
             console.print(
-                "[bold red]]===========[bold white][ MALVADO TOOL VIP ][/bold white]=============[/bold red]"
+                "[bold yellow]===============[bold white][ EL MALVADO ][/bold white]===============[/bold yellow]"
             )
 
             if service == 0:  # Exit
@@ -658,7 +657,7 @@ if __name__ == "__main__":
                         "[bold yellow] '======================================[/bold yellow]"
                     )
                     console.print(
-                        "[bold yellow] Gracias por usar nuestra herramienta, únete a nuestro canal de telegram.: @max_cpm_shadow[/bold yellow]"
+                        "[bold yellow] Gracias por usar nuestra herramienta, únete a nuestro canal de telegram.: @Jaim2s[/bold yellow]"
                     )
                 else:
                     continue
